@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+   <script src="https://kit.fontawesome.com/4564a82b68.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<body>
+<div id="header">
+  <div class="container">
+    <nav>
+        <img src="Images/home_logo2.png" alt="logo">
+      <ul id="sidemenu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#portfolio">Services</a></li>
+        <li><a href="#index.html">Login</a></li>
+
+        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+      <h1><span>W</span>elcome to <span>Knowledge</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Page.<br></h1>
+    </div>
+  </div>
+</div>
+ 
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title"><span>Know</span>ledge Zone</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="https://i.pinimg.com/564x/12/01/3b/12013babf8c17f0b43f9b95e43dccd24.jpg">
+                <div class="layer">
+                    <h3>Languages</h3>
+                    <p>Explore new languages.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://i.pinimg.com/236x/4c/99/13/4c99138cc7fc8d51b077d80be22621a0.jpg">
+                <div class="layer">
+                    <h3>News</h3>
+                    <p>Increase your Knowledge with world wide daily trends exploration.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://i.pinimg.com/564x/a1/6d/cf/a16dcfc5c213549e06dce9fccde627f6.jpg">
+                <div class="layer">
+                    <h3>Quiz</h3>
+                    <p>Play daily quiz and have fun.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+              </div></div>
+
+
+ 
+    </div>
+</div>
+<script>
+  var sidemenu=document.getElementById("sidemenu")
+  function openmenu(){
+      sidemenu.style.right="0";
+  }
+  function closemenu(){
+      sidemenu.style.right="-200px";
+  }
+</script>
+
+</body>
+</html>
