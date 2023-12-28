@@ -266,5 +266,49 @@ header{
         left: 25px;
         cursor: pointer;
     }
-   
+    .wrapper{
+        position:fixed;
+        margin-top: 200px;
+        width:280px;
+        height:410px;
+        background:transparent;
+        border:2px solid #f2b409;
+        border-radius:10px;
+        backdrop-filter:blur(20px);
+        box-shadow:0 0 30px rgba(25, 18, 18, 0.834);
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        overflow:hidden;
+        transform: scale(0);
+        transition:height .2s ease;
+    }
+    .form-box{
+        position:relative;
+        z-index: 1;
+        width:100%;
+        padding:30px;
+        box-shadow:0 0 20px rgba(0, 0, 0, 0.3);
+    }
+    .icon-close{
+        position:absolute;
+        top:0;
+        right:0;
+        width:25px;
+        height:25px;
+        background: #120f0b;
+        font-size: 1em;
+        color:#e5a10d;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom-left-radius:20px;
+        cursor:grab;
+        z-index:1;
+    }
+    .form-box h2{
+        font-size: 1em;
+        color:#fff;
+        text-align:center;
+        }
 }
