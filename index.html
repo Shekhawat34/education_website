@@ -11,10 +11,14 @@
      <header>
         <h2 class="logo"><img src="Images/home_logo2.png"></h2>
         <nav class="navigation">
+        <ul id="sidemenu">
             <a href="Home.html">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a href="#">About</a></li>
+           <a href="#">Contact</a>
             <button class="btnLogin-popup" onclick="openmenu()">Login</button>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
      </header>
      <div class="wrapper">
@@ -47,6 +51,7 @@
       
      </div>
      <script src="Login.js"></script>
+ 
 
 </body>
 </html>

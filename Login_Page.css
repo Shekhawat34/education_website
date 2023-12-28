@@ -120,6 +120,7 @@ header{
 }
 
 
+
 .icon-close{
     position:absolute;
     top:0;
@@ -240,117 +241,30 @@ header{
 .login-register p a:hover{
     text-decoration:underline ;
 }
-@media screen and (max-width: 768px) {
-    header {
-        padding: 50px;
+
+
+@media only screen and (max-width:600px){
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+        color: white;
     }
-    .logo {
-        font-size: 1.5em;
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
     }
-    .navigation a {
-        margin-left: 20px;
-        font-size: 0.9em;
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
     }
-    .navigation .btnLogin-popup {
-        width: 100px;
-        height: 40px;
-        font-size: 0.9em;
-        margin-left: 20px;
-    }
-    .wrapper {
-        
-        width: 90%;
-        height: auto;
-    }
-    .form-box {
-        padding: 20px;
-    }
-    .input-box input {
-        font-size: 0.9em;
-    }
-    .remember-forgot {
-        font-size: 0.8em;
-    }
-    .btn {
-        font-size: 0.9em;
-    }
-    .login-register {
-        font-size: 0.8em;
-    }
-}
-@media screen and (max-width: 900px) {
-    header {
-        padding: 67px;
-    }
-    .logo {
-        font-size: 1.5em;
-    }
-    .navigation a {
-        margin-left: 40px;
-        font-size: 0.9em;
-    }
-    .navigation .btnLogin-popup {
-        width: 100px;
-        height: 40px;
-        font-size: 0.9em;
-        margin-left: 20px;
-    }
-    .wrapper {
-        margin-top: 100px;
-        width: 90%;
-        height: auto;
-    }
-    .form-box {
-        padding: 20px;
-    }
-    .input-box input {
-        font-size: 0.9em;
-    }
-    .remember-forgot {
-        font-size: 0.8em;
-    }
-    .btn {
-        font-size: 0.9em;
-    }
-    .login-register {
-        font-size: 0.8em;
-    }
-}
-@media screen and (max-width: 1200px) {
-    header {
-        padding: 110px;
-    }
-    .logo {
-        font-size: 1.5em;
-    }
-    .navigation a {
-        margin-left: 40px;
-        font-size: 0.9em;
-    }
-    .navigation .btnLogin-popup {
-        width: 100px;
-        height: 40px;
-        font-size: 0.9em;
-        margin-left: 20px;
-    }
-    .wrapper {
-        margin-top: 230px;
-        width: 90%;
-        height: auto;
-    }
-    .form-box {
-        padding: 20px;
-    }
-    .input-box input {
-        font-size: 0.9em;
-    }
-    .remember-forgot {
-        font-size: 0.8em;
-    }
-    .btn {
-        font-size: 0.9em;
-    }
-    .login-register {
-        font-size: 0.8em;
-    }
+   
 }
